@@ -13,6 +13,9 @@ Tables used in this project:
 - **ratings** → ratings given by users (user_id, movie_id, rating, timestamp)  
 - **users** → demographic information (age, gender, occupation, zip code)  
 
+The raw MovieLens 100k dataset comes in multiple .data and .item files.
+I created a custom schema in PostgreSQL (movies, ratings, users, genres, occupations) and imported the data into relational tables. This step ensured normalized structure and allowed me to practice SQL joins, aggregations, and constraints on a realistic dataset.
+
 ## SQL Skills used
 - Joins across multiple tables  
 - Aggregations (`AVG`, `COUNT`, `ROUND`)  
